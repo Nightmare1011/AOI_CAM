@@ -74,14 +74,14 @@ class PyApp(gtk.Window):
   self.filt_layerlist = ['Click "Show" before "OK"']
 
   #Job name
-  frame_horiz0 = gtk.Frame("??妍:")
+  frame_horiz0 = gtk.Frame("Job Name:")
   main_vbox.pack_start(frame_horiz0, padding=5)
   self.Hbox0 = gtk.HBox()
   self.Hbox0.set_border_width(10)
   frame_horiz0.add(self.Hbox0)
 
   #Inf of Job
-  frame_horiz1 = gtk.Frame("颲?靽⊥:")
+  frame_horiz1 = gtk.Frame("Job Information:")
   main_vbox.pack_start(frame_horiz1, padding = 5)
   Hbox1 = gtk.HBox(False,5)
          Hbox1.set_border_width(20)
@@ -102,7 +102,7 @@ class PyApp(gtk.Window):
   Hbox1.pack_start(button2, False, False,0)
 
   #PCB improve
-  yjoblabels = gtk.Label(u'PCB隡?:')
+  yjoblabels = gtk.Label(u'PCB Optimization:')
   self.fmasksyh = gtk.combo_box_new_text()
   self.fmasksyh.set_size_request(80,30)
   self.fmasksyh.append_text("no")
